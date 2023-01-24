@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="css/register.css">
+    <title>Document</title>
+</head>
+<body>
+    <br>
+        <h1>Login Sistem Direktori Data Masjid</h1>
+    <br>
+        <table align="center" style="line-height: 35px;">
+            <tr>
+                <td>Username :</td>
+                <td><input type="text" name="admin" id="username"></td>
+            </tr>
+            <tr>
+                <td>Password :</td>
+                <td><input type="password" name="admin" id="password"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type="Daftar" onclick="login()">Sign  </button>  &nbsp;&nbsp;&nbsp;<a href="regist-user.html">create a user</a></td>
+                <td></td>
+            </tr>
+        </table>
+        <script>
+            function login(){
+                let uname = document.getElementById("username").value;
+                let pass = document.getElementById("password").value;
+    
+                if(uname == "admin" && pass == "admin"){
+                    alert("berhasil login");
+                    location.href = "slide5.html";
+                }else{
+                    alert("gagal silahkan coba lagi");
+                }
+            }
+        </script>
+        <div class="footer"><hr>
+        </div>
+</body>
+</html>
